@@ -1,0 +1,34 @@
+body {
+  background: black;
+  background: url(../../images/3.jpg);
+  background-repeat: repeat;
+}
+
+main {
+  padding-top: 25vh;
+}
+
+.card-body {
+  background-color: #1012244f;
+  border-radius: 20px;
+  color: white;
+}
+
+.card-body input {
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+  border-bottom: 1px solid #2D90BE;
+  border-radius: 0;
+}
+
+.card-body input:focus {
+  background: rgba(255, 255, 255, 0);
+  border: none !important;
+}
+
+.card {
+  background-color: #1012244f;
+  border-radius: 20px;
+}
+
