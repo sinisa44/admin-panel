@@ -37375,10 +37375,21 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/sass/login/app.scss":
-/*!***************************************!*\
-  !*** ./resources/sass/login/app.scss ***!
-  \***************************************/
+/***/ "./resources/sass/main/app.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/main/app.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/navigation/app.scss":
+/*!********************************************!*\
+  !*** ./resources/sass/navigation/app.scss ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -37387,14 +37398,15 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/login/app.scss ***!
-  \*******************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/main/app.scss ./resources/sass/navigation/app.scss ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\login\app.scss */"./resources/sass/login/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\main\app.scss */"./resources/sass/main/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\navigation\app.scss */"./resources/sass/navigation/app.scss");
 
 
 /***/ })

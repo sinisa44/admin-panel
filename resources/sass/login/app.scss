@@ -1,6 +1,6 @@
 body{
-    background: black;
-   background-repeat: no-repeat;
+
+   background-repeat:repeat;
 }
 
 main{
@@ -8,7 +8,8 @@ main{
 }
 
 .card-body{
-    background-color: #1012244f;
+    // background-color: #1012244f;
+    background-color: none !important;
     border-radius: 20px;
     color:white;
 
@@ -22,11 +23,18 @@ main{
         &:focus{
             background: rgba(255, 255, 255, 0);
             border: none !important;
+            color:white;
         }
+
+       
     }
 }
 .card{
-    background-color: #1012244f;
-
+    // background-color: #1012244f;
+    background:none !important;
     border-radius: 20px;
+
+    label{
+        color: #2D90BE;
+    }
 }

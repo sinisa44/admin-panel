@@ -1,5 +1,4 @@
 body {
-  background: black;
   background: url(../../images/3.jpg);
   background-repeat: repeat;
 }
@@ -9,7 +8,8 @@ main {
 }
 
 .card-body {
-  background-color: #1012244f;
+  margin-top: 25vh;
+  background-color: none !important;
   border-radius: 20px;
   color: white;
 }
@@ -25,10 +25,15 @@ main {
 .card-body input:focus {
   background: rgba(255, 255, 255, 0);
   border: none !important;
+  color:white;
 }
 
 .card {
-  background-color: #1012244f;
+  background: none !important;
   border-radius: 20px;
+}
+
+.card label {
+  color: #2D90BE;
 }
 
