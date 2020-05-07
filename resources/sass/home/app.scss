@@ -1,0 +1,65 @@
+@import '../variables';
+
+#main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .sidenav{
+        background-color: $primary-gray;
+        flex-basis: 15%;
+        width: 15%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        // padding-top: .5rem;
+
+        ul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            a{
+                color:white;
+                text-decoration: none;
+                font-family: Nunito, 'sans-serif';
+                font-weight: 600;
+
+                &:hover{
+                    color: $line-blue;
+                }
+            }
+
+            li{
+                margin-top: .1rem;
+                background-color: $secondary-gray;
+                // width: 100%;
+                list-style: none;
+                padding: 2rem 0;
+
+                
+
+                &:hover{
+                   
+                    border-bottom: 5px solid $line-blue;
+                }
+
+
+
+
+            }
+        }
+    }
+    .container{
+        background-color:#a5b7ca;
+        flex-basis: 85%;
+        // width: 80%;
+        height: 90vh;
+        padding: 0 1rem;
+
+        .home-content{
+            padding: 2rem;
+        }
+    }
+}

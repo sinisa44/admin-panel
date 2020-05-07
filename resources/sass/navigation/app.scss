@@ -2,6 +2,8 @@
 
 #main-nav{
     display: flex;
+    // position: sticky;
+    // top: 0;
     justify-content: space-between;
     padding: 0 2rem;
     background-color:$primary-gray;

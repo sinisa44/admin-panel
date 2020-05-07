@@ -37375,6 +37375,28 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/home/app.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/home/app.scss ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/home/users/create/app.scss":
+/*!***************************************************!*\
+  !*** ./resources/sass/home/users/create/app.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/main/app.scss":
 /*!**************************************!*\
   !*** ./resources/sass/main/app.scss ***!
@@ -37398,15 +37420,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/main/app.scss ./resources/sass/navigation/app.scss ***!
-  \*******************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/main/app.scss ./resources/sass/navigation/app.scss ./resources/sass/home/app.scss ./resources/sass/home/users/create/app.scss ***!
+  \**********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\main\app.scss */"./resources/sass/main/app.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\navigation\app.scss */"./resources/sass/navigation/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\navigation\app.scss */"./resources/sass/navigation/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\home\app.scss */"./resources/sass/home/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\home\users\create\app.scss */"./resources/sass/home/users/create/app.scss");
 
 
 /***/ })

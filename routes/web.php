@@ -23,4 +23,21 @@ Auth::routes();
 Route::get( '/', function() {
     return view ('auth.login');
 });
-Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group( ['middleware' => 'auth'], function(){
+    Route::get('/home', 'HomeController@index')->name('home');
+
+    //hostingUser
+    Route::get('/hostinguser/create', 'HostingUserController@create' );
+    Route::get( '/hostinguser', 'HostingUserController@index' );
+
+    //bookkeping
+    Route::get( '/bookeping', 'BookkepingController@index' );
+
+    //mailInfo
+    Route::get( '/mailinfo', 'MailInfoController@index' );
+
+    //Informaition
+    Route::get( '/information', 'InformationController@index' );
+});
+
