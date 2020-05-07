@@ -6,11 +6,28 @@
 
 #main-container .sidenav {
   background-color: #272727;
-  flex-basis: 15%;
-  width: 15%;
+  flex-basis: 10%;
   height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: 300ms linear;
+}
+
+#main-container .sidenav__shrink {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#main-container .sidenav__shrink:hover {
+  color: #2D90BE;
+}
+
+#main-container .sidenav__shrink:active {
+  font-size: small;
 }
 
 #main-container .sidenav ul {
@@ -44,12 +61,16 @@
 
 #main-container .container {
   background-color: #a5b7ca;
-  flex-basis: 85%;
+  flex-basis: 90%;
   height: 90vh;
   padding: 0 1rem;
 }
 
 #main-container .container .home-content {
   padding: 2rem;
+}
+
+.none {
+  display: none;
 }
 

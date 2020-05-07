@@ -1,4 +1,5 @@
 @import '../variables';
+@import './sidenav/shrink';
 
 #main-container{
     display: flex;
@@ -7,11 +8,32 @@
 
     .sidenav{
         background-color: $primary-gray;
-        flex-basis: 15%;
-        width: 15%;
+        flex-basis: 10%;
+        // width: 10%;
         height: 90vh;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        flex-direction: column;
+        transition:300ms linear;
+
+        
+        
+        &__shrink{
+            color:white;
+            display: flex;
+            justify-content:flex-end;
+            padding-bottom: .5rem;
+            padding-right: .5rem;
+
+
+            &:hover{
+                color: $line-blue;
+            }
+
+            &:active{
+                font-size: small;
+            }
+        }
         // padding-top: .5rem;
 
         ul{
@@ -53,7 +75,7 @@
     }
     .container{
         background-color:#a5b7ca;
-        flex-basis: 85%;
+        flex-basis: 90%;
         // width: 80%;
         height: 90vh;
         padding: 0 1rem;
@@ -62,4 +84,8 @@
             padding: 2rem;
         }
     }
+}
+
+.none{
+    display: none;
 }

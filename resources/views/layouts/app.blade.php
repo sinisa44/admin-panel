@@ -30,5 +30,7 @@
     @include( 'layouts.navigation.index')
 
     @yield('content')
+
+    @yield( 'scripts' )
 </body>
 </html>
