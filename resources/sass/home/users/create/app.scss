@@ -1,5 +1,48 @@
 @import '../../../variables';
+@import '../../sidenav/childElements';
 
 .home-content{
-   
+//    display: flex;
+//    flex-direction:row;
+      height: 100%;
+    .home-content--container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+
+
+        &__left{
+            flex-basis: 95%;
+        }
+
+        .sidenav-right{
+            display: flex;
+            flex-direction: column;
+            background-color: $primary-gray;
+            height:100%;
+            flex-basis: 3%;
+            justify-content: flex-start;
+            
+            @include childElements;
+            
+            &__ul{
+                margin: auto 0;
+            }
+        }
+    }
+   .heading{
+       display: flex;
+    //    justify-content: space-between;
+       text-align: center;
+       vertical-align: middle;
+
+        &__icon{
+            margin-right: 1rem;
+        }
+   }
+
+   &__main{
+       padding-top: 2rem;
+   }
 }

@@ -1,0 +1,89 @@
+.home-content {
+  height: 100%;
+}
+
+.home-content .home-content--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.home-content .home-content--container__left {
+  flex-basis: 95%;
+}
+
+.home-content .home-content--container .sidenav-right {
+  display: flex;
+  flex-direction: column;
+  background-color: #272727;
+  height: 100%;
+  flex-basis: 3%;
+  justify-content: flex-start;
+}
+
+.home-content .home-content--container .sidenav-right__right {
+  justify-content: first baseline !important;
+}
+
+.home-content .home-content--container .sidenav-right__shrink {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-content .home-content--container .sidenav-right__shrink:hover {
+  color: #2D90BE;
+}
+
+.home-content .home-content--container .sidenav-right__shrink:active {
+  font-size: small;
+}
+
+.home-content .home-content--container .sidenav-right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home-content .home-content--container .sidenav-right ul a {
+  color: white;
+  text-decoration: none;
+  font-family: Nunito, "sans-serif";
+  font-weight: 600;
+}
+
+.home-content .home-content--container .sidenav-right ul a:hover {
+  color: #2D90BE;
+}
+
+.home-content .home-content--container .sidenav-right ul li {
+  margin-top: 0.1rem;
+  background-color: #1a1919;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.home-content .home-content--container .sidenav-right ul li:hover {
+  border-bottom: 5px solid #2D90BE;
+}
+
+.home-content .home-content--container .sidenav-right__ul {
+  margin: auto 0;
+}
+
+.home-content .heading {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.home-content .heading__icon {
+  margin-right: 1rem;
+}
+
+.home-content__main {
+  padding-top: 2rem;
+}
+

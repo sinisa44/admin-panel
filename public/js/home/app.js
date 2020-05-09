@@ -97,47 +97,6 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _resources_selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./resources/selectors */ "./resources/js/home/resources/selectors.js");
 
-_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["button"].addEventListener('click', function (event) {
-  displayIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liNewUser"], 'fas fa-user-plus ');
-  displayIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liShowUser"], 'fas fa-users ');
-  displayIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liBookkeping"], 'fas fa-book ');
-  displayIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liMailInfo"], 'fas fa-envelope ');
-  displayIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liInformation"], 'fas fa-info ');
-  _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["button"].classList.add('none');
-  _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["buttonRight"].classList.remove('none');
-  animateSidebar('5%');
-});
-_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["buttonRight"].addEventListener('click', function (event) {
-  animateSidebar('10%');
-  _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["button"].classList.remove('none');
-  _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["buttonRight"].classList.add('none');
-  setTimeout(function () {
-    removeIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liNewUser"], 'New User');
-    removeIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liShowUser"], 'Show Users');
-    removeIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liBookkeping"], 'Bookkeping');
-    removeIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liMailInfo"], 'Mail Info');
-    removeIcon(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["liInformation"], 'Information');
-  }, 500);
-});
-
-var displayIcon = function displayIcon(selector, icon) {
-  selector.textContent = ''; // selector.style.paddingRight = "1rem";
-
-  var faIcon = document.createElement('i');
-  faIcon.className = "".concat(icon);
-  selector.appendChild(faIcon);
-};
-
-var removeIcon = function removeIcon(selector, text) {
-  selector.removeChild(selector.firstChild);
-  selector.textContent = text;
-};
-
-var animateSidebar = function animateSidebar(flexBasis) {
-  _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["sideNavUl"].style.textAlign = "center"; // selector.sideNavUl.style.paddingRight = ".5rem";
-
-  _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["sideNav"].style.flexBasis = flexBasis;
-};
 
 /***/ }),
 
@@ -165,7 +124,7 @@ var liShowUser = document.querySelector('#li-showUser');
 var liBookkeping = document.querySelector('#li-bookkeping');
 var liMailInfo = document.querySelector('#li-mailInfo');
 var liInformation = document.querySelector('#li-information');
-var sideNav = document.querySelector('.sidenav');
+var sideNav = document.querySelector('.left-sidenav');
 var container = document.querySelector('.container');
 var button = document.querySelector('.fa-arrow-alt-circle-left');
 var buttonRight = document.querySelector('.fa-arrow-alt-circle-right');

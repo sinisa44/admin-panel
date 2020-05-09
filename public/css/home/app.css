@@ -4,70 +4,67 @@
   justify-content: space-between;
 }
 
-#main-container .sidenav {
+#main-container .sidenav-left {
   background-color: #272727;
-  flex-basis: 10%;
+  flex-basis: 5%;
   height: 90vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   transition: 300ms linear;
 }
 
-#main-container .sidenav__shrink {
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 0.5rem;
-  padding-right: 0.5rem;
+#main-container .sidenav-left__right {
+  justify-content: first baseline !important;
 }
 
-#main-container .sidenav__shrink:hover {
+#main-container .sidenav-left__shrink {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-container .sidenav-left__shrink:hover {
   color: #2D90BE;
 }
 
-#main-container .sidenav__shrink:active {
+#main-container .sidenav-left__shrink:active {
   font-size: small;
 }
 
-#main-container .sidenav ul {
+#main-container .sidenav-left ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-#main-container .sidenav ul a {
+#main-container .sidenav-left ul a {
   color: white;
   text-decoration: none;
   font-family: Nunito, "sans-serif";
   font-weight: 600;
 }
 
-#main-container .sidenav ul a:hover {
+#main-container .sidenav-left ul a:hover {
   color: #2D90BE;
 }
 
-#main-container .sidenav ul li {
+#main-container .sidenav-left ul li {
   margin-top: 0.1rem;
   background-color: #1a1919;
   list-style: none;
   padding: 2rem 0;
 }
 
-#main-container .sidenav ul li:hover {
+#main-container .sidenav-left ul li:hover {
   border-bottom: 5px solid #2D90BE;
 }
 
 #main-container .container {
   background-color: #a5b7ca;
-  flex-basis: 90%;
+  flex-basis: 95%;
   height: 90vh;
-  padding: 0 1rem;
-}
-
-#main-container .container .home-content {
-  padding: 2rem;
 }
 
 .none {

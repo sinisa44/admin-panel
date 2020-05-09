@@ -5,7 +5,21 @@
 @endsection
 
 @section( 'home-content')
-    <div class="heading">
-       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat dolores molestiae possimus fuga ipsum, magni quibusdam fugit quis, pariatur repudiandae officiis accusamus! Nostrum qui, maiores labore optio maxime dolorum voluptatem libero tenetur id voluptas cupiditate, quisquam, et dolores recusandae doloremque. Corporis voluptates eaque sit adipisci labore ratione? Sed repellat reiciendis perferendis alias ipsa. Fugit dolore quisquam, accusantium facere iusto repudiandae optio assumenda ab repellat architecto mollitia? Nostrum autem iusto facilis sit modi accusamus harum quidem debitis quis doloremque sed ut, sint eius eos enim numquam, neque error ea possimus, maxime magnam! Dicta, consequuntur odio? Est ratione voluptas doloribus fuga modi?
+<div class="home-content--container">
+    <div class="home-content--container__left">
+        <div class="heading">
+            <div class="heading__icon">
+                <i class="fas fa-user-plus fa-2x"></i>
+            </div>
+            <div class="heading__title">
+                <h1>CREATE NEW USER</h1>
+            </div>
+           
+        </div>
     </div>
+  
+    @include( 'layouts.sidenav.right.index')
+</div>
+
+
 @endsection
