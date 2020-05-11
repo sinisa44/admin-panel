@@ -21,5 +21,8 @@
     @include( 'layouts.sidenav.right.index')
 </div>
 
+@section( 'home-scripts' )
+    <script src="{{ asset( 'js/users/create/app.js') }}"></script>
+@endsection
 
 @endsection

@@ -8,13 +8,14 @@
 
     .sidenav-left{
         background-color: $primary-gray;
-        flex-basis: 5%;
+        flex-basis: 3%;
         // width: 10%;
-        height: 90vh;
+        // height: 95vh;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         transition:300ms linear;
+
 
        @include childElements;
     }
@@ -22,15 +23,15 @@
     
     .container{
         background-color:#a5b7ca;
-        flex-basis: 95%;
+        flex-basis: 97%;
         // width: 80%;
-        height: 90vh;
+        height: 95vh;
         // padding: 0 1rem;
-
-       
+        transition:300ms linear;
     }
 }
 
 .none{
     display: none;
 }
+

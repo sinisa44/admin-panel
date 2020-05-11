@@ -1,6 +1,5 @@
 <div class="sidenav-left sidenav">
     <div class="sidenav-left__shrink">
-        <i class="fas fa-arrow-alt-circle-left fa-2x none"></i>
         <i class="fas fa-arrow-alt-circle-right fa-2x"></i>
     </div>
     <ul id="sidenav__ul">

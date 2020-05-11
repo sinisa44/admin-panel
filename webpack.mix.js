@@ -19,4 +19,5 @@ mix.sass( 'resources/sass/main/app.scss', 'public/css/main' )
     // .sass( 'resources/sass/login/app.scss', 'public/css/login')
     // .sass('resources/sass/app.scss', 'public/css');
 
-mix.js( 'resources/js/home/app.js', 'public/js/home')
+mix.js( 'resources/js/home/app.js' , 'public/js/home') 
+   .js( 'resources/js/users/create/app.js', 'public/js/users/create')

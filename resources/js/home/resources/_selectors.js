@@ -1,0 +1,9 @@
+export const sideNavLeft     = document.querySelector( '.sidenav-left' );
+export const sideNavButton   = document.querySelector( '.fa-arrow-alt-circle-right' );
+export const sideNavUl       = document.querySelector( '#sidenav__ul' );
+export const linkAddUser     = document.querySelector( '#li-newUser');
+export const linkShowUser    = document.querySelector( '#li-showUser' );
+export const linkBookkeping  = document.querySelector( '#li-bookkeping' );
+export const linkMailInfo    = document.querySelector( '#li-mailInfo' );
+export const linkInformation = document.querySelector( '#li-information' );
+export const container       = document.querySelector( '.container' );

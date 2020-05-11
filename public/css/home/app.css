@@ -6,8 +6,7 @@
 
 #main-container .sidenav-left {
   background-color: #272727;
-  flex-basis: 5%;
-  height: 90vh;
+  flex-basis: 3%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -63,8 +62,9 @@
 
 #main-container .container {
   background-color: #a5b7ca;
-  flex-basis: 95%;
-  height: 90vh;
+  flex-basis: 97%;
+  height: 95vh;
+  transition: 300ms linear;
 }
 
 .none {
