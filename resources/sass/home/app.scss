@@ -22,11 +22,9 @@
 
     
     .container{
-        background-color:#a5b7ca;
+        background-color: $container-white;
         flex-basis: 97%;
-        // width: 80%;
         height: 95vh;
-        // padding: 0 1rem;
         transition:300ms linear;
     }
 }

@@ -1,8 +1,11 @@
 @import '../../../variables';
 @import '../../sidenav/childElements';
+@import './sidenav/right';
+@import '../../modal/modal';
 
 .home-content{
     height: 100%;
+
     .home-content--container{
         display: flex;
         flex-direction: row;
@@ -11,32 +14,42 @@
 
 
         &__left{
-            flex-basis: 95%;
+            flex-basis: 60%;
+            margin: 15rem auto;
+
         }
+        
+        @include sideNavRight;
 
-        .sidenav-right{
-            display: flex;
-            flex-direction: column;
-            background-color: $primary-gray;
-            height:100%;
-            flex-basis: 3%;
-            justify-content: space-around;
+        .user-type--heading{
+            background-color: #3f3f3f;
+            border-radius: 10px;
+            // margin-top: 2rem;
+            padding: 2rem;
+            text-align: center;
 
-            li{
-                color:white;
-                font-family: Nunito, 'sans-serif'
-            }
             
-            @include childElements;
-            
-            &__ul{
-                margin: auto 0;
+           
+            &__icons{
+                padding-top: 1rem;
+                color: $primary-white;
+                width: 50%;
+                margin: 0 auto;
+                i{
+                    // background-color: orange;
+                    padding: .3rem;
+                    border-radius: .24rem;
+                }
+                i:first-child{
+                    margin-right: 2rem;
+                }
+
+               
             }
         }
     }
    .heading{
        display: flex;
-    //    justify-content: space-between;
        text-align: center;
        vertical-align: middle;
 
@@ -48,83 +61,6 @@
    &__main{
        padding-top: 2rem;
    }
-   .modal{
-       display: none;
-       background-color: $primary-gray;
-       width: 50rem;
-    //    height: 15rem;
-       position: absolute;
-       top:25%;
-       left: 25%;
-       border-radius: 5px;
-
-       &__heading{
-           display: flex;
-           justify-content: space-between;
-           border-bottom: 1px solid $line-blue;
-           vertical-align: center;
-           text-align: middle;
-           justify-content: space-between;
-           padding: 0 1rem;
-           color: #6b6b6b;
-
-           span{
-               text-align: middle;
-               vertical-align: middle;
-               display: flex;
-               justify-content: center;
-               padding-top: 10px;
-
-               i{
-                   color:white;
-
-                   &:hover{
-                       color:$line-blue;
-                   }
-               }
-           }
-       }
-
-       &__body{
-           padding: 1rem;
-           color: white;
-           
-       }
-
-       &__footer{
-           border-top: 1px solid $line-blue;
-           padding:.6rem;
-           display: flex;
-           justify-content: flex-end;
-
-           button{
-               background-color: $primary-gray;
-               border: 1px solid $line-blue;
-               color:$line-blue;
-               padding: .2rem;
-               
-
-               &:hover{
-                   background-color: $line-blue;
-                   color:$primary-gray;
-               }
-
-               &:active{
-                   background-color: $primary-gray;
-                   color: $line-blue;
-               }
-           }
-       }
-   }
-   .add-hosting-modal{
-        // display: block !important;
-   }
-
-   .add-domain-modal{
-  
-    }
-
-    .add-technic-modal{
-    
-    }
+   
+   @include modal;
 }

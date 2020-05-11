@@ -1,0 +1,22 @@
+@mixin sideNavRight {
+    
+    .sidenav-right{
+        display: flex;
+        flex-direction: column;
+        background-color: $primary-gray;
+        height:100%;
+        flex-basis: 4%;
+        justify-content: space-around;
+
+        li{
+            color:white;
+            font-family: Nunito, 'sans-serif'
+        }
+        
+        @include childElements;
+        
+        &__ul{
+            margin: auto 0;
+        }
+    }
+}

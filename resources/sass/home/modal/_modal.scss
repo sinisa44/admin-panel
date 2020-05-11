@@ -1,0 +1,70 @@
+@mixin modal{
+    .modal{
+        display: none;
+        background-color: $primary-gray;
+        width: 50rem;
+     //    height: 15rem;
+        position: absolute;
+        top:25%;
+        left: 25%;
+        border-radius: 5px;
+ 
+        &__heading{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $line-blue;
+            vertical-align: center;
+            text-align: middle;
+            justify-content: space-between;
+            padding: 0 1rem;
+            color: #6b6b6b;
+ 
+            span{
+                text-align: middle;
+                vertical-align: middle;
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+ 
+                i{
+                    color:$container-white;
+ 
+                    &:hover{
+                        color:$line-blue;
+                    }
+                }
+            }
+        }
+ 
+        &__body{
+            padding: 1rem;
+            color: white;
+            
+        }
+ 
+        &__footer{
+            border-top: 1px solid $line-blue;
+            padding:.6rem;
+            display: flex;
+            justify-content: flex-end;
+ 
+            button{
+                background-color: $primary-gray;
+                border: 1px solid $line-blue;
+                color:$line-blue;
+                padding: .2rem;
+                
+ 
+                &:hover{
+                    background-color: $line-blue;
+                    color:$primary-gray;
+                }
+ 
+                &:active{
+                    background-color: $primary-gray;
+                    color: $line-blue;
+                }
+            }
+        }
+    }
+}
