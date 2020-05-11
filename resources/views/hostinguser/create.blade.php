@@ -6,16 +6,11 @@
 
 @section( 'home-content')
 <div class="home-content--container">
+    
     <div class="home-content--container__left">
-        <div class="heading">
-            <div class="heading__icon">
-                <i class="fas fa-user-plus fa-2x"></i>
-            </div>
-            <div class="heading__title">
-                <h1>CREATE NEW USER</h1>
-            </div>
-           
-        </div>
+        @include( 'hostinguser.modal.domain.index')
+        @include( 'hostinguser.modal.hosting.index')
+        @include( 'hostinguser.modal.tech.index')
     </div>
   
     @include( 'layouts.sidenav.right.index')

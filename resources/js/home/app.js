@@ -9,12 +9,12 @@ selector.sideNavButton.addEventListener( 'click', (event) => {
    
     const sidenav = {
         name: selector.sideNavLeft,
-        width: '10%'
+        width: '8%'
     }
 
     const container = {
         name: selector.container,
-        width: '90%'
+        width: '92%'
     }
     sideNav.changeWidth( sidenav, container );
 
@@ -40,13 +40,13 @@ selector.sideNavButton.addEventListener( 'click', (event) => {
             text    : 'Information'
         },
     ]
-
-    sideNav.addText( sideNavText );
+    setTimeout(() => {
+        sideNav.addText( sideNavText );
+    }, 300 );
 
 
     } else if( event.target.classList.contains( 'fa-arrow-alt-circle-left' ) ) {
         sideNav.changeIcon( event.target, 'fa-arrow-alt-circle-left', 'fa-arrow-alt-circle-right' );
-
 
         const selectorTarget = [
             selector.linkAddUser,
@@ -68,6 +68,5 @@ selector.sideNavButton.addEventListener( 'click', (event) => {
         }
 
         sideNav.changeWidth( sidenav, container );
-
     }
 });

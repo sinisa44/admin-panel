@@ -1,0 +1,12 @@
+export const btnNewHosting = document.querySelector( '#li-newHosting' );
+export const btnNewDomain  = document.querySelector( '#li-newDomain' );
+export const btnNewTechnic = document.querySelector( '#li-newTechnic' );
+export const modalHosting  = document.querySelector( '.add-hosting-modal' );
+export const modalDomain   = document.querySelector( '.add-domain-modal' );
+export const modalTechnic  = document.querySelector( '.add-tech-modal' );
+export const btnCloseDom   = document.querySelector( '.close-domain-mod' );
+export const btnCloseHos   = document.querySelector( '.close-hosting-mod' );
+export const btnCloseTech  = document.querySelector( '.close-tech-mod' );
+export const btnCloseHModal = document.querySelector( '.modal-h-close--btn' );
+export const btnCloseDModal = document.querySelector( '.modal-d-close--btn' );
+export const btnCloseTModal = document.querySelector( '.modal-t-close--btn' );

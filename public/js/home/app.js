@@ -164,11 +164,11 @@ _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["sideNavButton"].addEventListe
     sideNav.changeIcon(event.target, 'fa-arrow-alt-circle-right', 'fa-arrow-alt-circle-left');
     var sidenav = {
       name: _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["sideNavLeft"],
-      width: '10%'
+      width: '8%'
     };
     var container = {
       name: _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["container"],
-      width: '90%'
+      width: '92%'
     };
     sideNav.changeWidth(sidenav, container);
     var sideNavText = [{
@@ -187,7 +187,9 @@ _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["sideNavButton"].addEventListe
       selector: _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["linkInformation"],
       text: 'Information'
     }];
-    sideNav.addText(sideNavText);
+    setTimeout(function () {
+      sideNav.addText(sideNavText);
+    }, 300);
   } else if (event.target.classList.contains('fa-arrow-alt-circle-left')) {
     sideNav.changeIcon(event.target, 'fa-arrow-alt-circle-left', 'fa-arrow-alt-circle-right');
     var selectorTarget = [_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["linkAddUser"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["linkShowUser"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["linkBookkeping"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["linkMailInfo"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["linkInformation"]];

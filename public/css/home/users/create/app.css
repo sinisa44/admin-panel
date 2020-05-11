@@ -19,7 +19,12 @@
   background-color: #272727;
   height: 100%;
   flex-basis: 3%;
-  justify-content: flex-start;
+  justify-content: space-around;
+}
+
+.home-content .home-content--container .sidenav-right li {
+  color: white;
+  font-family: Nunito, "sans-serif";
 }
 
 .home-content .home-content--container .sidenav-right__right {
@@ -85,5 +90,71 @@
 
 .home-content__main {
   padding-top: 2rem;
+}
+
+.home-content .modal {
+  display: none;
+  background-color: #272727;
+  width: 50rem;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  border-radius: 5px;
+}
+
+.home-content .modal__heading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2D90BE;
+  vertical-align: center;
+  text-align: middle;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #6b6b6b;
+}
+
+.home-content .modal__heading span {
+  text-align: middle;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.home-content .modal__heading span i {
+  color: white;
+}
+
+.home-content .modal__heading span i:hover {
+  color: #2D90BE;
+}
+
+.home-content .modal__body {
+  padding: 1rem;
+  color: white;
+}
+
+.home-content .modal__footer {
+  border-top: 1px solid #2D90BE;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-content .modal__footer button {
+  background-color: #272727;
+  border: 1px solid #2D90BE;
+  color: #2D90BE;
+  padding: 0.2rem;
+}
+
+.home-content .modal__footer button:hover {
+  background-color: #2D90BE;
+  color: #272727;
+}
+
+.home-content .modal__footer button:active {
+  background-color: #272727;
+  color: #2D90BE;
 }
 
