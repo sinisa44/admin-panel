@@ -1,7 +1,9 @@
 @import '../../../variables';
 @import '../../sidenav/childElements';
 @import './sidenav/right';
-@import '../../modal/modal';
+@import './form/form';
+@import '../../../main/components/modal';
+@import '../../../main/components/form';
 
 .home-content{
     height: 100%;
@@ -17,6 +19,7 @@
             flex-basis: 60%;
             margin: 15rem auto;
 
+           
         }
         
         @include sideNavRight;
@@ -25,23 +28,50 @@
             background-color: #3f3f3f;
             border-radius: 10px;
             // margin-top: 2rem;
-            padding: 2rem;
+            padding: 2rem 0;
             text-align: center;
-
-            
+            // display: flex;
+            display: none;
+            flex-direction: column;
+          
            
             &__icons{
+                display: flex;
+                flex-direction: row;
+               width: 50%;
+               justify-content: space-around;
                 padding-top: 1rem;
                 color: $primary-white;
-                width: 50%;
+        
+                // width: 50%;
                 margin: 0 auto;
                 i{
                     // background-color: orange;
-                    padding: .3rem;
+                    // padding: .3rem;
                     border-radius: .24rem;
                 }
-                i:first-child{
-                    margin-right: 2rem;
+
+                .icon-container{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                i{
+                    padding: 1rem;
+                    transition:300ms linear;
+
+                    
+                }
+
+                i:hover{
+                    background-color: $line-blue;
+                    //    padding: 1rem;
+                   
+                }
+
+                i:active{
+                    background-color: $primary-white;
+                    color:$line-blue
                 }
 
                
@@ -63,4 +93,18 @@
    }
    
    @include modal;
+}
+
+.pushTop{
+    flex-basis: 90% !important;
+    margin: 0 auto !important;
+}
+
+.user-create--container{
+    // display: none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color:$primary-gray;
+    // z-index: 10;
 }

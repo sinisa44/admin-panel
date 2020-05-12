@@ -1,0 +1,65 @@
+.user-create--form{
+    .form-group{
+
+        margin-bottom: 2rem;
+        display:flex;
+        justify-content: center;
+
+        &__input{
+            margin-top: .5rem;
+            flex-basis: 33%;
+            display: flex;
+            justify-content: flex-end;
+            height: 2rem;
+
+            label{
+                margin-right: 1rem;
+                color:$line-blue;
+
+            }
+
+            input{
+                border-radius: 5px;
+                height: 1.7rem;
+                background-color: rgba(255, 255, 255, 0);
+                border:none;
+                border-bottom: 1px solid $line-blue;
+                border-radius: 0;
+                font-family: Nunito, sans-serif;
+                color:white;
+            }
+
+            input:focus{
+                background-color: $line-blue;
+                color: white;
+            }
+        }
+      
+    }
+
+    input[type="submit"]{
+    //    background-color: $line-blue;
+       width: 100px;
+       padding: 1rem;
+       border-radius: 10px;
+    //    border: none;
+    //    color:$primary-gray;
+       font-family: Nunito, sans-serif;
+       background-color: $primary-gray;
+       color:$line-blue;
+       border: 2px solid $line-blue;
+
+
+       &:hover{
+          background-color: $line-blue;
+          border: none;
+          color:$primary-gray;
+          border: 2px solid $primary-gray
+       }
+
+       &:active{
+           transform: translateY(2px);
+          
+       }
+    }
+}
