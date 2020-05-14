@@ -8,13 +8,16 @@
 
 h1,h2,h3,h4,h5, label{
     font-family: Nunito, sans-serif;
-    color: $primary-white;
+    // color: $primary-white;
+    color: $line-blue;
 }
 p{
     font-family: Nunito, sans-serif;
 }
 a{
     font-family: Nunito, sans-serif;
+    color: $line-blue;
+
 }
 button{
     font-family: Nunito, sans-serif;

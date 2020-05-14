@@ -4,4 +4,9 @@ export default class Form {
         form.style.display = 'block';
         container.classList.add( 'pushTop' );
     }
+
+    hideForm( header, form ) {
+        header.style.display = 'block';
+        form.style.display = 'none';
+    }
 }

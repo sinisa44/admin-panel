@@ -1,5 +1,4 @@
-<div class="sidenav-right sidenav">
-
+<div class="sidenav-right sidenav none">
     <ul id="sidenav__ul">
             <li id="li-newHosting"> 
                 <i class="fas fa-puzzle-piece"></i>  H
@@ -10,5 +9,5 @@
             <li id="li-newTechnic"> 
                 <i class="fas fa-headset"></i>  TS
             </li>
-
     </ul>
+</div>

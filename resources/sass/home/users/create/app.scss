@@ -25,13 +25,16 @@
         @include sideNavRight;
 
         .user-type--heading{
-            background-color: #3f3f3f;
+            margin:  auto;
+            margin-top:25vh;
+            width: 70%;
+            background-color: $primary-gray;
             border-radius: 10px;
             // margin-top: 2rem;
             padding: 2rem 0;
             text-align: center;
             // display: flex;
-            display: none;
+            // display: none;
             flex-direction: column;
           
            
@@ -41,7 +44,7 @@
                width: 50%;
                justify-content: space-around;
                 padding-top: 1rem;
-                color: $primary-white;
+                color: $line-blue;
         
                 // width: 50%;
                 margin: 0 auto;
@@ -66,6 +69,7 @@
                 i:hover{
                     background-color: $line-blue;
                     //    padding: 1rem;
+                    color: $primary-white;
                    
                 }
 
@@ -77,6 +81,8 @@
                
             }
         }
+
+
     }
    .heading{
        display: flex;
@@ -101,10 +107,29 @@
 }
 
 .user-create--container{
-    // display: none;
+    // display: flex;
     width: 70%;
-    margin: 0 auto;
+    margin:  auto;
+    margin-top:25vh;
     padding: 1rem;
     background-color:$primary-gray;
+    border-radius:10px;
     // z-index: 10;
+
+    .user-create--close{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.5rem;
+        i{
+            color:$line-blue;
+
+            &:hover{
+                color: $primary-white;
+            }
+
+            &:active{
+                color:$line-blue;
+            }
+        }
+    }
 }

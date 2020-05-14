@@ -29,8 +29,10 @@
             </div>
         </div>
 
-        <div class="user-type-private user-create--container">
-           {{-- name,surname,jmbg,address,location,address,zip,phone,mobile,email, --}}
+        <div class="user-type-private user-create--container none">
+            <div class="user-create--close">
+                <i class="fas fa-window-close fa-2x private-btn--close"></i>
+            </div>
            <div class="user-create--form">
                 <form action="" class="form">
                    <div class="user-create--form__ns  form-group">
@@ -86,11 +88,76 @@
         </div>
 
         <div class="user-type-company user-create--container none">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laudantium alias vel obcaecati, quisquam dolores repudiandae? Ex labore voluptates repudiandae nisi quaerat sint ipsa exercitationem ipsam quam quas, accusamus nobis totam nulla provident, quidem dolor, iure odio accusantium ipsum? Dolore aut veritatis nesciunt maxime repellat quod. Consequatur pariatur amet reprehenderit itaque tenetur suscipit magnam, modi ad consectetur aperiam voluptate corrupti esse, consequuntur dignissimos! Fugiat ipsum saepe animi non culpa accusantium explicabo totam eveniet cumque recusandae ad odio quasi praesentium facilis porro eos, sint tempore? Impedit aspernatur numquam nam ratione cumque, mollitia eaque sed consequatur enim, recusandae obcaecati facere quibusdam eveniet beatae amet blanditiis minima labore iste reprehenderit eligendi suscipit cum repudiandae! Eum eveniet tenetur aliquam nemo aut, quibusdam hic provident sint, excepturi voluptatem rerum cumque voluptas odio sapiente vitae mollitia impedit fugiat repudiandae. Corporis obcaecati nisi quidem quasi est molestias voluptate corrupti culpa ducimus voluptas reiciendis amet voluptates magnam, minima distinctio harum alias recusandae ea vitae at! Nisi optio ipsum inventore quidem quasi perspiciatis facilis voluptatum sequi nesciunt illo. Dolorem vitae esse aliquid sapiente, fuga alias id voluptas recusandae nesciunt at illum, cupiditate officiis commodi quam laudantium earum quae atque obcaecati doloribus quaerat assumenda nulla. Sit alias harum voluptatum reiciendis!
-        </div>
+            <div class="user-create--close company-btn--close">
+                <i class="fas fa-window-close fa-2x company-btn--close"></i>
+            </div>
+            <div class="user-create--form">
+                <form action="" class="form">
+                <div class="user-create--form__ns  form-group">
+                    <div class="form-group__input">
+                            <label for="customer">Customer</label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="form-group__input">
+                        <label for="principal_name"> First Name</label>
+                        <input type="text" name="principal_name">
+                        </div>
+                        <div class="form-group__input">
+                            <label for="principal_surname"> Lastname Name</label>
+                            <input type="text" name="principal_surname">
+                        </div>
+                </div>
+                <div class="user-create--form__ns  form-group">
+                        <div class="form-group__input">
+                            <label for="Location">Location</label>
+                            <input type="text" name="location">
+                        </div>
+                        <div class="form-group__input">
+                            <label for="address">Address</label>
+                            <input type="text" name="address">
+                        </div>
+                        <div class="form-group__input">
+                            <label for="zip">Zip</label>
+                            <input type="text" name="zip">
+                        </div>
+                    </div>
+                    <div class="user-create--form__ns  form-group">
+                        <div class="form-group__input">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone">
+                        </div>
+                        <div class="form-group__input">
+                            <label for="mobile">Mobile</label>
+                            <input type="text" name="mobile_number">
+                        </div>
+                        <div class="form-group__input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                        </div>
+                    </div>
+
+                <div class="user-create--form__ns  form-group">
+                        <div class="form-group__input">
+                            <label for="tax_id">Tax ID</label>
+                            <input type="text" name="tax_id">
+                        </div>
+                        <div class="form-group__input">
+                            <label for="pib">Pib</label>
+                            <input type="text" name="pib">
+                        </div>
+                    </div>
+
+                <div class="form-group">
+                    <input class="btn-0form" type="submit"   value="CREATE">
+                </div>
+            </form>
+       </div>
     </div>
+    </div>
+        @include( 'layouts.sidenav.right.index')
+</div>
   
-    @include( 'layouts.sidenav.right.index')
+   
 </div>
 
 @section( 'home-scripts' )

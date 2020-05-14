@@ -6,7 +6,7 @@
     
     
     &__shrink{
-        color:white;
+        color:$line-blue;
         display: flex;
         justify-content:space-around;
         // padding-bottom: .5rem;
@@ -30,7 +30,7 @@
         text-align: center;
 
         a{
-            color:white;
+            color:$line-blue;
             text-decoration: none;
             font-family: Nunito, 'sans-serif';
             font-weight: 600;

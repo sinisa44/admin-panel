@@ -2,6 +2,7 @@
     
     .sidenav-right{
         display: flex;
+        // display: none;
         flex-direction: column;
         background-color: $primary-gray;
         height:100%;
@@ -9,7 +10,7 @@
         justify-content: space-around;
 
         li{
-            color:white;
+            color:$line-blue;
             font-family: Nunito, 'sans-serif'
         }
         

@@ -114,6 +114,12 @@ var Form = /*#__PURE__*/function () {
       form.style.display = 'block';
       container.classList.add('pushTop');
     }
+  }, {
+    key: "hideForm",
+    value: function hideForm(header, form) {
+      header.style.display = 'block';
+      form.style.display = 'none';
+    }
   }]);
 
   return Form;
@@ -201,6 +207,14 @@ _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["iconCompany"].addEventListene
   var form = new _classes_form__WEBPACK_IMPORTED_MODULE_2__["default"]();
   form.displayForm(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["userTypeHead"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["formCompany"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["containerLeft"]);
 });
+_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["privateBtnClose"].addEventListener('click', function () {
+  var form = new _classes_form__WEBPACK_IMPORTED_MODULE_2__["default"]();
+  form.hideForm(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["userTypeHead"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["formPrivate"]);
+});
+_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["companyBtnClose"].addEventListener('click', function () {
+  var form = new _classes_form__WEBPACK_IMPORTED_MODULE_2__["default"]();
+  form.hideForm(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["userTypeHead"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["formCompany"]);
+});
 
 /***/ }),
 
@@ -208,7 +222,7 @@ _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["iconCompany"].addEventListene
 /*!***********************************************************!*\
   !*** ./resources/js/users/create/resources/_selectors.js ***!
   \***********************************************************/
-/*! exports provided: btnNewHosting, btnNewDomain, btnNewTechnic, modalHosting, modalDomain, modalTechnic, btnCloseDom, btnCloseHos, btnCloseTech, btnCloseHModal, btnCloseDModal, btnCloseTModal, iconPrivate, iconCompany, formPrivate, formCompany, homeContainer, userTypeHead, containerLeft */
+/*! exports provided: btnNewHosting, btnNewDomain, btnNewTechnic, modalHosting, modalDomain, modalTechnic, btnCloseDom, btnCloseHos, btnCloseTech, btnCloseHModal, btnCloseDModal, btnCloseTModal, iconPrivate, iconCompany, formPrivate, formCompany, homeContainer, userTypeHead, containerLeft, privateBtnClose, companyBtnClose */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -232,6 +246,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "homeContainer", function() { return homeContainer; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "userTypeHead", function() { return userTypeHead; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "containerLeft", function() { return containerLeft; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "privateBtnClose", function() { return privateBtnClose; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "companyBtnClose", function() { return companyBtnClose; });
 var btnNewHosting = document.querySelector('#li-newHosting');
 var btnNewDomain = document.querySelector('#li-newDomain');
 var btnNewTechnic = document.querySelector('#li-newTechnic');
@@ -251,6 +267,8 @@ var formCompany = document.querySelector('.user-type-company');
 var homeContainer = document.querySelector('.home-content--container');
 var userTypeHead = document.querySelector('.user-type--heading');
 var containerLeft = document.querySelector('.home-content--container__left');
+var privateBtnClose = document.querySelector('.private-btn--close');
+var companyBtnClose = document.querySelector('.company-btn--close');
 
 /***/ }),
 

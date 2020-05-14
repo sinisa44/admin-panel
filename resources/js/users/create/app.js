@@ -27,3 +27,13 @@ selector.iconCompany.addEventListener( 'click', () =>{
     const form = new Form();
     form.displayForm( selector.userTypeHead, selector.formCompany, selector.containerLeft );
 });
+
+selector.privateBtnClose.addEventListener( 'click' , () => {
+    const form = new Form();
+    form.hideForm( selector.userTypeHead, selector.formPrivate );
+})
+
+selector.companyBtnClose.addEventListener( 'click', () => {
+    const form = new Form();
+    form.hideForm( selector.userTypeHead, selector.formCompany );
+});
