@@ -1,4 +1,4 @@
-<div class="add-tech-modal modal">
+<div class="add-tech-modal modal none">
     <div class="modal__heading">
          <h1>Test tech</h1>
          <span>

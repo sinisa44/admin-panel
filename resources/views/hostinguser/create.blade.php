@@ -12,7 +12,7 @@
         @include( 'hostinguser.modal.hosting.index')
         @include( 'hostinguser.modal.tech.index')
 
-        <div class="user-type--heading">
+        <div class="user-type--heading none">
             <div>
                 <h1>CHOOSE USER TYPE</h1>
             </div>
@@ -45,9 +45,9 @@
                            <input type="text" name="lastname">
                        </div>
                        <div class="form-group__input">
-                        <label for="jmbg">JMBG</label>
-                        <input type="text" name="jmbg">
-                    </div>
+                            <label for="jmbg">JMBG</label>
+                            <input type="text" name="jmbg">
+                       </div>
                    </div>
 
                    <div class="user-create--form__ns  form-group">
@@ -137,18 +137,18 @@
                     </div>
 
                 <div class="user-create--form__ns  form-group">
-                        <div class="form-group__input">
-                            <label for="tax_id">Tax ID</label>
-                            <input type="text" name="tax_id">
-                        </div>
-                        <div class="form-group__input">
-                            <label for="pib">Pib</label>
-                            <input type="text" name="pib">
-                        </div>
+                    <div class="form-group__input">
+                        <label for="tax_id">Tax ID</label>
+                        <input type="text" name="tax_id">
                     </div>
+                    <div class="form-group__input">
+                        <label for="pib">Pib</label>
+                        <input type="text" name="pib">
+                    </div>
+                </div>
 
                 <div class="form-group">
-                    <input class="btn-0form" type="submit"   value="CREATE">
+                    <input class="btn-0form" type="submit" value="CREATE">
                 </div>
             </form>
        </div>

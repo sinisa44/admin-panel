@@ -18,4 +18,4 @@ export const homeContainer   = document.querySelector( '.home-content--container
 export const userTypeHead    = document.querySelector( '.user-type--heading' );
 export const containerLeft   = document.querySelector( '.home-content--container__left' );
 export const privateBtnClose = document.querySelector( '.private-btn--close' );
-export const companyBtnClose = document.querySelector( '.company-btn--close' );
+export const companyBtnClose = document.querySelector( '.company-btn--close' );  

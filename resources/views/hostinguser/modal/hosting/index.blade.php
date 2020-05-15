@@ -1,4 +1,4 @@
-<div class=" modal add-hosting-modal">
+<div class=" modal add-hosting-modal none">
     <div class="modal__heading">
          <h1>Test hos</h1>
          <span>

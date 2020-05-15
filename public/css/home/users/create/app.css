@@ -54,6 +54,68 @@
   transform: translateY(2px);
 }
 
+.service-form form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.service-form form .service-group {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-form form .service-group__input {
+  flex-basis: 55%;
+  border: none;
+  background-color: #272727;
+  border-bottom: 1px solid #2D90BE;
+  color: #2D90BE;
+}
+
+.service-form form .service-group__select {
+  flex-basis: 55%;
+  border: none;
+  border-bottom: 1px solid #2D90BE;
+  background-color: #272727;
+  color: #2D90BE;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+}
+
+.service-form form .service-group__select:focus {
+  border: none;
+}
+
+.service-form form .service-group__label {
+  flex-basis: 45%;
+}
+
+.service-form form .service-group input[type=submit] {
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-family: Nunito, sans-serif;
+  background-color: #272727;
+  color: #2D90BE;
+  border: 2px solid #2D90BE;
+  margin: 0 auto;
+}
+
+.service-form form .service-group input[type=submit]:hover {
+  background-color: #2D90BE;
+  border: none;
+  color: #272727;
+  border: 2px solid #272727;
+}
+
+.service-form form .service-group input[type=submit]:active {
+  transform: translateY(2px);
+}
+
 .form {
   display: flex;
   flex-direction: column;

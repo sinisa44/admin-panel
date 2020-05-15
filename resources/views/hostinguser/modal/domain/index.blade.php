@@ -5,8 +5,25 @@
             <i class="fas fa-times close-domain-mod"></i>
         </span>
     </div>
-    <div class="modal__body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis distinctio accusantium incidunt nostrum, porro commodi ducimus modi, architecto, quis optio animi excepturi molestiae! Necessitatibus, nobis architecto corporis asperiores quaerat dolores placeat nam voluptatum minus quibusdam debitis dolore, fuga totam autem illo et pariatur impedit quod eaque nulla dignissimos ipsa eum expedita doloribus! Cupiditate tempora dolorem impedit temporibus recusandae minima voluptates explicabo quos, enim est magnam rem quasi itaque eum ducimus facilis sit aliquid eligendi perferendis nam nemo neque. Optio, itaque reprehenderit officia atque quos veritatis quia maxime magni quibusdam minus, quidem cum accusamus quae alias perspiciatis natus magnam consectetur?
+    <div class="service-form">
+        <form action="">
+            <div class="service-group">
+                <label for="domain_name" class="service-group__label">Domain Name</label>
+                <input type="text" name="domain_name" class="service-group__input">
+            </div>
+            <div class="service-group">
+                <label for="domain_period" class="service-group__label">Domain Period</label>
+                <select name="domain_period" class="service-group__select">
+                    @for( $i = 1; $i < 11; $i ++ )
+                        <option value={{ $i }}>{{ $i }}</option>
+                    @endfor
+                </select>
+            </div>
+
+            <div class="service-group">
+                <input type="submit" class="service-group__submit" value="CREATE">
+            </div>
+        </form>
     </div>
     <div class="modal__footer">
         <button class="modal-d-close--btn">Close</button>

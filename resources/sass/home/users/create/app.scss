@@ -1,7 +1,8 @@
 @import '../../../variables';
 @import '../../sidenav/childElements';
 @import './sidenav/right';
-@import './form/form';
+@import './form/user-form';
+@import './form/service-form';
 @import '../../../main/components/modal';
 @import '../../../main/components/form';
 
@@ -18,8 +19,6 @@
         &__left{
             flex-basis: 60%;
             margin: 15rem auto;
-
-           
         }
         
         @include sideNavRight;
