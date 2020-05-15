@@ -1,0 +1,69 @@
+.tech-form{
+    @mixin input{
+        input{
+            // flex-basis: 33%;
+            border: none;
+            background-color:$primary-gray;
+            border-bottom: 1px solid $line-blue;
+            color: $line-blue;
+            }
+    }
+
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .service-group:first-child{
+            padding: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .input{
+              @include input;
+            }
+        }
+        .service-group{
+            padding: 1rem;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto;
+            
+            .input{
+               
+              @include input;
+            }
+        }
+
+        input[type="submit"]{
+            //    background-color: $line-blue;
+               width: 100px;
+               padding: .5rem;
+               border-radius: 10px;
+            //    border: none;
+            //    color:$primary-gray;
+               font-family: Nunito, sans-serif;
+               background-color: $primary-gray;
+               color:$line-blue;
+               border: 2px solid $line-blue;
+               margin: 0 auto;
+        
+        
+               &:hover{
+                  background-color: $line-blue;
+                  border: none;
+                  color:$primary-gray;
+                  border: 2px solid $primary-gray
+               }
+        
+               &:active{
+                   transform: translateY(2px);
+                  
+               }
+            }
+    }
+}

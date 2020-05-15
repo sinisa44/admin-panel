@@ -1,6 +1,6 @@
-<div class="add-domain-modal modal">
+<div class="add-domain-modal modal none">
     <div class="modal__heading">
-        <h1>Test dom</h1>
+        <h1>Create DOmain</h1>
         <span>
             <i class="fas fa-times close-domain-mod"></i>
         </span>

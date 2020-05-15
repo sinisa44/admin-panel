@@ -12,7 +12,7 @@
         @include( 'hostinguser.modal.hosting.index')
         @include( 'hostinguser.modal.tech.index')
 
-        <div class="user-type--heading none">
+        <div class="user-type--heading">
             <div>
                 <h1>CHOOSE USER TYPE</h1>
             </div>

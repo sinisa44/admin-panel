@@ -1,12 +1,40 @@
 <div class=" modal add-hosting-modal none">
     <div class="modal__heading">
-         <h1>Test hos</h1>
+         <h1>Create Hosting</h1>
          <span>
              <i class="fas fa-times close-hosting-mod"></i>
          </span>
     </div>
-    <div class="modal__body">
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis blanditiis distinctio accusantium incidunt nostrum, porro commodi ducimus modi, architecto, quis optio animi excepturi molestiae! Necessitatibus, nobis architecto corporis asperiores quaerat dolores placeat nam voluptatum minus quibusdam debitis dolore, fuga totam autem illo et pariatur impedit quod eaque nulla dignissimos ipsa eum expedita doloribus! Cupiditate tempora dolorem impedit temporibus recusandae minima voluptates explicabo quos, enim est magnam rem quasi itaque eum ducimus facilis sit aliquid eligendi perferendis nam nemo neque. Optio, itaque reprehenderit officia atque quos veritatis quia maxime magni quibusdam minus, quidem cum accusamus quae alias perspiciatis natus magnam consectetur?</p> 
+    <div class="service-form">
+        <form action="">
+            <div class="service-group">
+                <label for="hosting_package" class="service-group__label">Hosting Package</label>
+                <select name="domain_package" class="service-group__select">
+
+                    @php  $packages = ['Lite','Base','Full','Max']; @endphp
+
+                    @foreach( $packages as $package )
+                        <option value={{ $package }}>{{ $package }}</option>
+                    @endforeach
+
+                </select>
+            </div>
+            <div class="service-group">
+                <label for="hosting_payment" class="service-group__label">Hosting Payment</label>
+                <select name="hosting_payment" class="service-group__select">
+                    @php $payments = ['Annual', 'Monthly']; @endphp
+
+                    @foreach( $payments as $payment )
+                        <option value={{ $payment }}>{{ $payment}}</option>
+                    @endforeach
+
+                </select>
+            </div>
+
+            <div class="service-group">
+                <input type="submit" class="service-group__submit" value="CREATE">
+            </div>
+        </form>
     </div>
     <div class="modal__footer">
         <button class="modal-h-close--btn">Close</button>
