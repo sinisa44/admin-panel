@@ -95,17 +95,17 @@
                 <form action="" class="form">
                 <div class="user-create--form__ns  form-group">
                     <div class="form-group__input">
-                            <label for="customer">Customer</label>
-                            <input type="text" name="name">
-                        </div>
-                        <div class="form-group__input">
+                        <label for="customer">Customer</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="form-group__input">
                         <label for="principal_name"> First Name</label>
                         <input type="text" name="principal_name">
-                        </div>
-                        <div class="form-group__input">
-                            <label for="principal_surname"> Lastname Name</label>
-                            <input type="text" name="principal_surname">
-                        </div>
+                    </div>
+                    <div class="form-group__input">
+                        <label for="principal_surname"> Lastname Name</label>
+                        <input type="text" name="principal_surname">
+                    </div>
                 </div>
                 <div class="user-create--form__ns  form-group">
                         <div class="form-group__input">

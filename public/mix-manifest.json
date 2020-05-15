@@ -4,5 +4,7 @@
     "/css/navigation/app.css": "/css/navigation/app.css",
     "/css/home/app.css": "/css/home/app.css",
     "/css/home/users/create/app.css": "/css/home/users/create/app.css",
-    "/js/users/create/app.js": "/js/users/create/app.js"
+    "/css/home/users/index/app.css": "/css/home/users/index/app.css",
+    "/js/users/create/app.js": "/js/users/create/app.js",
+    "/js/users/index/app.js": "/js/users/index/app.js"
 }

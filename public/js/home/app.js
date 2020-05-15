@@ -260,6 +260,17 @@ var container = document.querySelector('.container');
 
 /***/ }),
 
+/***/ "./resources/sass/home/users/index/app.scss":
+/*!**************************************************!*\
+  !*** ./resources/sass/home/users/index/app.scss ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/main/app.scss":
 /*!**************************************!*\
   !*** ./resources/sass/main/app.scss ***!
@@ -283,9 +294,9 @@ var container = document.querySelector('.container');
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/home/app.js ./resources/sass/main/app.scss ./resources/sass/navigation/app.scss ./resources/sass/home/app.scss ./resources/sass/home/users/create/app.scss ***!
-  \***************************************************************************************************************************************************************************************/
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/home/app.js ./resources/sass/main/app.scss ./resources/sass/navigation/app.scss ./resources/sass/home/app.scss ./resources/sass/home/users/create/app.scss ./resources/sass/home/users/index/app.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -293,7 +304,8 @@ __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\js\home\app.js */"
 __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\main\app.scss */"./resources/sass/main/app.scss");
 __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\navigation\app.scss */"./resources/sass/navigation/app.scss");
 __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\home\app.scss */"./resources/sass/home/app.scss");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\home\users\create\app.scss */"./resources/sass/home/users/create/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\home\users\create\app.scss */"./resources/sass/home/users/create/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\admin-panel\resources\sass\home\users\index\app.scss */"./resources/sass/home/users/index/app.scss");
 
 
 /***/ })

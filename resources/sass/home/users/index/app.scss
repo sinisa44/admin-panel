@@ -1,0 +1,34 @@
+@import '../../../variables';
+
+.user-index{
+    &__heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .7rem;
+        background-color: black;
+        // border: 1px solid $line-blue;
+
+
+        input{
+            background-color: black;
+            border:1px solid $line-blue;
+            color: $line-blue;
+            padding: .1rem .5rem;
+            border-radius:10px;
+        }
+        .fas:hover{
+            color:$primary-white;
+        }
+        .fas:active{
+            color: $line-blue;
+        }
+
+        .heading-radio{
+            flex-basis: 35%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
