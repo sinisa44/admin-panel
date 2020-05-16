@@ -22,7 +22,8 @@
                 </div>
                 <div class="heading-content">
                     <label for="inactive">Private Users</label>
-                    <input type="checkbox" id="showInactive">
+                    <input type="checkbox" id="showInactive"
+                    >
                 </div>
             </div>
             
