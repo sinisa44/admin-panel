@@ -17,13 +17,13 @@
                     <input type="checkbox" id="showInactive">
                 </div>
                 <div class="heading-content">
-                    <label for="inactive">Companies</label>
-                    <input type="checkbox" id="showInactive">
+                    <button id="show-companies-btn">Companies</button>
                 </div>
                 <div class="heading-content">
-                    <label for="inactive">Private Users</label>
-                    <input type="checkbox" id="showInactive"
-                    >
+                    <button id="show-private-btn">Private Users</button>
+                </div>
+                <div class="heading-content">
+                    <button id="show-all-btn">All Users</button>
                 </div>
             </div>
             
@@ -33,18 +33,14 @@
             </div>
         </div>
 
-        <div class="user-index__content">
-            <table>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Last Name</th>
-                    <th></th>
-                </tr>
-                <tr>
+        @include( 'hostinguser.table.user_all' )
+        @include( 'hostinguser.table.user_private' )
+        @include( 'hostinguser.table.user_company' )
+      
 
-                </tr>
-            </table>
-        </div>
-  </div>
+    </div>
+
+@section( 'home-scripts' )
+    <script src="{{ asset( 'js/users/index/app.js') }}"></script>
+@endsection
 @endsection

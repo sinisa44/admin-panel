@@ -1,0 +1,47 @@
+
+.show-user--table{
+    // margin-top: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    background-color: $primary-gray;
+    padding: 2rem;
+
+    .table{
+        border-collapse: collapse;
+    
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+        color:$line-blue;
+
+        thead{
+            
+            th{
+                padding: 0.3rem;
+                border-bottom: 1px solid $line-blue;
+                text-align: left;
+            }
+            th:last-child{
+                text-align: center;
+            }
+        }
+
+        tbody{
+            td{
+                padding: 0.3rem;
+                border-bottom: 1px solid $line-blue;
+                text-align: left;
+            }
+            td:last-child{
+                text-align: center;
+            }
+
+            tr:hover{
+               background-color: $line-blue;
+               color:black;
+               cursor: pointer;
+            }
+        }
+    }
+}
+

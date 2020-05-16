@@ -1,3 +1,44 @@
+.show-user--table {
+  margin: 1rem auto;
+  width: 80%;
+  background-color: #272727;
+  padding: 2rem;
+}
+
+.show-user--table .table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #2D90BE;
+}
+
+.show-user--table .table thead th {
+  padding: 0.3rem;
+  border-bottom: 1px solid #2D90BE;
+  text-align: left;
+}
+
+.show-user--table .table thead th:last-child {
+  text-align: center;
+}
+
+.show-user--table .table tbody td {
+  padding: 0.3rem;
+  border-bottom: 1px solid #2D90BE;
+  text-align: left;
+}
+
+.show-user--table .table tbody td:last-child {
+  text-align: center;
+}
+
+.show-user--table .table tbody tr:hover {
+  background-color: #2D90BE;
+  color: black;
+  cursor: pointer;
+}
+
 .user-index__heading {
   display: flex;
   flex-direction: row;
@@ -27,5 +68,35 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.user-index__heading .heading-content {
+  vertical-align: middle;
+}
+
+.user-index__heading .heading-content button {
+  background-color: black;
+  border: 1px solid #2D90BE;
+  color: #2D90BE;
+  padding: 0.3rem 0.5rem;
+  border-radius: 10px;
+}
+
+.user-index__heading .heading-content button:hover {
+  background-color: #2D90BE;
+  border: 1px solid black;
+  color: black;
+}
+
+.user-index__heading .heading-content button:active {
+  background-color: black;
+  border: 1px solid #2D90BE;
+  color: #2D90BE;
+}
+
+.user-index__heading .heading-content .active {
+  background-color: #2D90BE !important;
+  color: black !important;
+  border: 1px solid black !important;
 }
 

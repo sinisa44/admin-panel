@@ -1,4 +1,5 @@
 @import '../../../variables';
+@import './table/table-user-private';
 
 .user-index{
     &__heading{
@@ -30,5 +31,34 @@
             flex-direction: row;
             justify-content: space-around;
         }
+
+        .heading-content{
+            vertical-align: middle;
+            button{
+                background-color: black;
+                border:1px solid $line-blue;
+                color: $line-blue;
+                padding: .3rem .5rem;
+                border-radius:10px;
+
+                &:hover{
+                    background-color: $line-blue;
+                    border: 1px solid black;
+                    color: black;
+                }
+                &:active{
+                    background-color: black;
+                    border: 1px solid $line-blue;
+                    color: $line-blue;
+
+                }
+            }
+            .active{
+                background-color: $line-blue !important;
+                color: black !important;
+                border:1px solid black !important;
+            }
+        }
     }
 }
+
