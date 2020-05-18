@@ -26,6 +26,7 @@
 @endsection
 
 @section( 'scripts' )
+<script src="{{ asset( 'js/vendor/jquery.paginate.min.js')}}"></script>
     <script src="{{ asset('js/home/app.js') }}"></script>
     @yield( 'home-scripts' )
 @endsection

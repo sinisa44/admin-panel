@@ -18,25 +18,33 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td> Company</td>
-                <td>test representative</td>
-                <td>test Location</td>
-                <td>test address</td>
-                <td>mail@mail.com</td>
-                <td>www.test.com</td>
-                <td>LITE</td>
-                <td>
-                    @php $user_active = 0; @endphp
+            @foreach ($hosting_users as $h_user)    
+                <tr>
+                    <td>{{ $h_user->id }}</td>
 
-                    @if( $user_active == 1 )
-                        <i class="fas fa-check-circle" style="color:green"></i>
+                    @if( $h_user->client_type == 1 )
+                        <td>Company</td>
                     @else
-                        <i class="fas fa-times-circle" style="color:red"></i>
+                        <td>Private</td>
                     @endif
-                </td> 
-            </tr> 
+
+                    <td>{{ $h_user->first_name }}</td>
+                    <td>{{ $h_user->last_name }}</td>
+                    <td>{{ $h_user->address }}</td>
+                    <td>{{ $h_user->email }}</td>
+                    <td>www.test.com</td>
+                    <td>LITE</td>
+                    <td>
+                        
+
+                        @if( $h_user->active == 1 )
+                            <i class="fas fa-check-circle" style="color:green"></i>
+                        @else
+                            <i class="fas fa-times-circle" style="color:red"></i>
+                        @endif
+                    </td> 
+                </tr>
+            @endforeach
         </tbody>
     </table>
 </div>

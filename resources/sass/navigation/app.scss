@@ -5,38 +5,43 @@
     // position: sticky;
     // top: 0;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: .5rem 2rem;
     background-color:$primary-gray;
     height: 5vh;
     align-items: center;
-   
+
+
     a{
         color:$line-blue;
         text-decoration: none;
         font-family: Nunito;
-        font-weight: 400;
-        font-size: large;
-
+        font-weight: 100;
 
     }
 
     .nav-items{
         display: flex;
         justify-content: space-between;
-        // align-self: center;
         width: 32%;
+        margin-right: 50%;
         height: 95%;
         a{
             display: flex;
-            background-color: $secondary-gray;
-         
             align-items: center;
             height: 100%;
             padding: 0 1rem;
+            border:1px solid $line-blue;
+            border-radius: 10px;
         }
        a:hover{
-        //    background-color: red;
-           border-bottom: 5px solid $line-blue;
+        background-color: $line-blue;
+        border: 1px solid $line-blue;
+        color: $primary-gray;
+       }
+
+       a:active{
+           background-color: $primary-gray;
+           border:1px solid $line-blue;
            color: $line-blue;
        }
     }

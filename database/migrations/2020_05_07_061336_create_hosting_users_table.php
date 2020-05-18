@@ -15,6 +15,20 @@ class CreateHostingUsersTable extends Migration
     {
         Schema::create('hosting_users', function (Blueprint $table) {
             $table->id();
+            $table->enum('client_type', [1,2] )->nullable( false);
+            $table->string( 'customer' )->nullable();
+            $table->string( 'first_name' )->nullable(false );
+            $table->string( 'last_name' )->nullable( false);
+            $table->string( 'jmbg' )->nullable();
+            $table->string( 'address' )->nullable();
+            $table->string( 'location' )->nullable();
+            $table->integer( 'zip_code')->nullable();
+            $table->string( 'phone_number')->nullable();
+            $table->string( 'mobile_number')->nullable();
+            $table->string( 'email' )->nullable( false )->unique();
+            $table->string( 'tax_id');
+            $table->string( 'pib' );
+            $table->enum( 'active', [1,2] )->nullable( false );
             $table->timestamps();
         });
     }
