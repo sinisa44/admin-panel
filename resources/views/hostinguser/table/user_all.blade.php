@@ -1,4 +1,4 @@
-<div class="user-all show-user--table">
+<div class="user-all show-user--table" id="show-user--table">
     <h3>
         <i class="fas fa-users"></i>
         
@@ -28,8 +28,8 @@
                         <td>Private</td>
                     @endif
 
-                    <td>{{ $h_user->first_name }}</td>
-                    <td>{{ $h_user->last_name }}</td>
+                <td>{{ $h_user->first_name }} {{ $h_user->last_name}}</td>
+                    <td>{{ $h_user->location }}</td>
                     <td>{{ $h_user->address }}</td>
                     <td>{{ $h_user->email }}</td>
                     <td>www.test.com</td>

@@ -1,8 +1,8 @@
 .show-user--table {
-  margin: 1rem auto;
-  width: 80%;
+  margin: 0.5rem auto;
+  width: 97%;
   background-color: #272727;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .show-user--table .table {
