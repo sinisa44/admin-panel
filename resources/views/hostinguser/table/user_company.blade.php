@@ -3,7 +3,7 @@
         <i class="fas fa-user-tie"></i>
         Companies 
     </h3>
-    <table class="table">
+    <table class="table" id="show-company--table">
         <thead>
             <tr>
                 <th><i class="fas fa-hashtag"></i></th>
@@ -19,26 +19,30 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>TEST Company</td>
-                <td>test representative</td>
-                <td>test last name</td>
-                <td>test location</td>
-                <td>test address</td>
-                <td>mail@mail.com</td>
-                <td>mail@mail.com</td>
-                <td>www.test.com</td>
-                <td>
-                    @php $user_active = 0; @endphp
-
-                    @if( $user_active == 1 )
-                        <i class="fas fa-check-circle" style="color:green"></i>
-                    @else
-                        <i class="fas fa-times-circle" style="color:red"></i>
-                    @endif
-                </td> 
-            </tr> 
+            @foreach( $hosting_users as $h_user )
+            
+            @if(  $h_user->client_type == 2 )
+                @continue
+            @endif
+                <tr>
+                    <td>{{ $h_user->id }}</td>
+                    <td>{{ $h_user->customer }}</td>
+                    <td>{{ $h_user->first_name }}</td>
+                    <td>{{ $h_user->last_name}}</td>
+                    <td>{{ $h_user->location}}</td>
+                    <td>{{ $h_user->address }}</td>
+                    <td>{{ $h_user->email }}</td>
+                    <td>mail@mail.com</td>
+                    <td>www.test.com</td>
+                    <td>
+                        @if( $h_user->active == 1 )
+                            <i class="fas fa-check-circle" style="color:green"></i>
+                        @else
+                            <i class="fas fa-times-circle" style="color:red"></i>
+                        @endif
+                    </td> 
+                </tr> 
+            @endforeach
         </tbody>
     </table>
 </div>

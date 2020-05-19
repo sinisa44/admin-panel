@@ -1,9 +1,9 @@
-<div class="user-all show-user--table" id="show-user--table">
-    <h3>
+<div class="user-all show-user--table" >
+    {{-- <h3>
         <i class="fas fa-users"></i>
         
-    </h3>
-    <table class="table">
+    </h3> --}}
+    <table class="table" id="show-user--table">
         <thead>
             <tr>
                 <th><i class="fas fa-hashtag"></i></th>

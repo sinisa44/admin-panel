@@ -147,6 +147,20 @@ _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["btnShowPrivate"].addEventList
 _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["btnShowAll"].addEventListener('click', function () {
   _classes_table__WEBPACK_IMPORTED_MODULE_1__["default"].showTable(_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["tableUserAll"], [_resources_selectors__WEBPACK_IMPORTED_MODULE_0__["tableUserCompany"], _resources_selectors__WEBPACK_IMPORTED_MODULE_0__["tableUserPrivate"]]);
 });
+var UserAll = $('#show-user--table').DataTable({
+  "pageLength": 15
+});
+var UserCompany = $('#show-company--table').DataTable({
+  "pageLength": 8
+});
+var UserPrivate = $('#show-private--table').DataTable({
+  "pageLength": 8
+});
+$('#searchUser').keyup(function () {
+  UserAll.search($('#searchUser').val()).draw();
+  UserCompany.search($('#searchUser').val()).draw();
+  UserPrivate.search($('#searchUser').val()).draw();
+});
 
 /***/ }),
 

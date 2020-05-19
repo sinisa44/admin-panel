@@ -19,7 +19,9 @@
 @endsection
 
 @section( 'scripts' )
+    <script src="{{ asset('js/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset( 'js/datatable/datatables.min.js' ) }}"></script>
     <script src="{{ asset('js/home/app.js') }}"></script>
-
+   
     @yield( 'home-scripts' )
 @endsection

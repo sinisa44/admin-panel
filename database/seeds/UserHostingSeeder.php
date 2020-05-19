@@ -11,6 +11,6 @@ class UserHostingSeeder extends Seeder
      */
     public function run()
     {
-        factory( App\HostingUser::class, 4000 )->create();
+        factory( App\HostingUser::class, 200 )->create();
     }
 }

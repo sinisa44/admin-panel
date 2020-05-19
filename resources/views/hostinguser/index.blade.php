@@ -2,6 +2,7 @@
 
 @section( 'home-styles' )
     <link rel="stylesheet" href="{{ asset( 'css/home/users/index/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/datatable/datatables.min.css') }}">
 @endsection
 
 @section( 'home-content' )

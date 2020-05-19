@@ -5,10 +5,11 @@
     // position: sticky;
     // top: 0;
     justify-content: space-between;
-    padding: .5rem 2rem;
+    padding: 0 2rem;
     background-color:$primary-gray;
     height: 5vh;
     align-items: center;
+    position: static;
 
 
     a{
@@ -24,7 +25,7 @@
         justify-content: space-between;
         width: 32%;
         margin-right: 50%;
-        height: 95%;
+        height: 60%;
         a{
             display: flex;
             align-items: center;

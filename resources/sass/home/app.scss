@@ -33,3 +33,28 @@
     display: none;
 }
 
+.dataTables_length{
+    display: none;
+}
+
+.dataTables_filter{
+    display: none;
+}
+
+.dataTables_info{
+    display: none;
+}
+
+.dataTables_wrapper, .dataTables_paginate{
+    text-align: center !important;
+    float: none !important;
+}
+
+#show-user--table_previous{
+  
+        color: $line-blue !important;
+}
+
+.paginate_button{
+    color:$line-blue !important;
+}
