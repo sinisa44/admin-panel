@@ -23,7 +23,15 @@
                 @continue
             @endif
                 <tr>
-                    <td>{{ $h_user->id }}</td>
+                    @php
+                        if( $h_user->active == 1 ) {
+                            $active = 'active_check';
+                        }else{
+                            $active = 'check_inactive';
+                        }
+                     @endphp
+
+                    <td data-filter="{{ $active }}"  data-order="{{ $h_user->id}}">{{ $h_user->id }}</td>
                     <td>{{ $h_user->first_name}}</td>
                     <td>{{ $h_user->last_name }}</td>
                     <td>{{ $h_user->address }}</td>
@@ -33,7 +41,8 @@
                     <td>LITE</td>
                     <td>
                         @if( $h_user->active == 1 )
-                            <i class="fas fa-check-circle" style="color:green"></i>
+                           
+                            <i class="fas fa-check-circle " style="color:green"></i>
                         @else
                             <i class="fas fa-times-circle" style="color:red"></i>
                         @endif

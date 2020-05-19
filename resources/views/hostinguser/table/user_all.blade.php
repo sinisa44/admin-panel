@@ -19,8 +19,17 @@
         </thead>
         <tbody>
             @foreach ($hosting_users as $h_user)    
+            
                 <tr>
-                    <td>{{ $h_user->id }}</td>
+                    @php
+                        if( $h_user->active == 1 ) {
+                            $active = 'active_check';
+                        }else{
+                            $active = 'check_inactive';
+                        }
+                    @endphp
+
+                    <td data-filter="{{ $active }}"  data-order="{{ $h_user->id}}">{{ $h_user->id }}</td>
 
                     @if( $h_user->client_type == 1 )
                         <td>Company</td>
@@ -28,21 +37,24 @@
                         <td>Private</td>
                     @endif
 
-                <td>{{ $h_user->first_name }} {{ $h_user->last_name}}</td>
+                    <td>{{ $h_user->first_name }} {{ $h_user->last_name}}</td>
                     <td>{{ $h_user->location }}</td>
                     <td>{{ $h_user->address }}</td>
                     <td>{{ $h_user->email }}</td>
                     <td>www.test.com</td>
                     <td>LITE</td>
-                    <td>
-                        
-
-                        @if( $h_user->active == 1 )
+                  
+                    @if( $h_user->active == 1 )
+                        <td>
+                          
                             <i class="fas fa-check-circle" style="color:green"></i>
-                        @else
+                        </td> 
+                    @else
+                        <td>
+                          
                             <i class="fas fa-times-circle" style="color:red"></i>
-                        @endif
-                    </td> 
+                        </td>
+                    @endif
                 </tr>
             @endforeach
         </tbody>

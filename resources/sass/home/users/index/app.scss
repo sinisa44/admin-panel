@@ -26,7 +26,7 @@
         }
 
         .heading-radio{
-            flex-basis: 35%;
+            flex-basis: 40%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -60,5 +60,11 @@
             }
         }
     }
+}
+
+.active{
+    background-color: $line-blue;
+    border: 1px solid black;
+    color: black;
 }
 

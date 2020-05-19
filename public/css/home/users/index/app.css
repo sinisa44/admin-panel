@@ -1,7 +1,8 @@
 .show-user--table {
   margin: 0.5rem auto;
-  width: 97%;
+  width: 99%;
   background-color: #272727;
+  padding: 0.2rem;
 }
 
 .show-user--table .table {
@@ -68,7 +69,7 @@
 }
 
 .user-index__heading .heading-radio {
-  flex-basis: 35%;
+  flex-basis: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -102,5 +103,11 @@
   background-color: #2D90BE !important;
   color: black !important;
   border: 1px solid black !important;
+}
+
+.active {
+  background-color: #2D90BE;
+  border: 1px solid black;
+  color: black;
 }
 

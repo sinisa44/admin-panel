@@ -11,11 +11,15 @@
             <div class="heading-radio">
                 <div class="heading-content">
                     <label for="active">Ative Users</label>
-                    <input type="checkbox" id="showActive">
+                    <input type="radio" name="active" id="showActive">
                 </div>
                 <div class="heading-content">
                     <label for="inactive">Inactive Users</label>
-                    <input type="checkbox" id="showInactive">
+                    <input type="radio" name="active" id="showInactive">
+                </div>
+                <div class="heading-content">
+                    <label for="all">Show All</label>
+                    <input type="radio" name="active" id="showAll" checked>
                 </div>
                 <div class="heading-content">
                     <button id="show-companies-btn">Companies</button>
