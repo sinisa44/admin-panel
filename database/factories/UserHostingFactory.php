@@ -11,7 +11,7 @@ $factory->define(HostingUser::class, function (Faker $faker) {
         'customer'    => $faker->company,
         'first_name'  => $faker->firstName,
         'last_name'   => $faker->lastName,
-        'jmbg'        => $faker->numberBetween(10000000000000, 9999999999999 ),
+        'jmbg'        => $faker->numberBetween( 10000000000000,  99999999999999 ),
         'address'     => $faker->address,
         'location'    => $faker->randomElement(
             [
