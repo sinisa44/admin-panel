@@ -1,3 +1,4 @@
+
 <div class="user-all show-user--table" >
     {{-- <h3>
         <i class="fas fa-users"></i>
@@ -19,7 +20,7 @@
         </thead>
         <tbody>
             @foreach ($hosting_users as $h_user)    
-            
+                
                 <tr>
                     @php
                         if( $h_user->active == 1 ) {
@@ -41,8 +42,8 @@
                     <td>{{ $h_user->location }}</td>
                     <td>{{ $h_user->address }}</td>
                     <td>{{ $h_user->email }}</td>
-                    <td>www.test.com</td>
-                    <td>LITE</td>
+                    <td>{{ $h_user->domain->name}}</td>
+                    <td>{{ $h_user->hosting->packet}}</td>
                   
                     @if( $h_user->active == 1 )
                         <td>

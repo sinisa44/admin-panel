@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\HostingUser;
 
-class HostingUserController extends Controller
+class HostingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,7 @@ class HostingUserController extends Controller
      */
     public function index()
     {
-        $hosting_users = HostingUser::with( 'domain', 'hosting' )->get();
-                       
-        return view( 'hostinguser.index', compact( 'hosting_users') );
+        //
     }
 
     /**
@@ -26,7 +23,7 @@ class HostingUserController extends Controller
      */
     public function create()
     {
-       return view( 'hostinguser.create' );
+        //
     }
 
     /**

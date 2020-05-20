@@ -14,7 +14,9 @@
                 <th>Address</th>
                 <th>Email</th>
                 <th>Domain</th>
+                <th>Domain Period</th>
                 <th>Hosting Packet</th>
+                <th>Hosting Payment</th>
                 <th>Active</th>
             </tr>
         </thead>
@@ -25,13 +27,14 @@
                 @continue
             @endif
                 <tr>
-                @php
-                    if( $h_user->active == 1 ) {
-                        $active = 'active_check';
-                    }else{
-                        $active = 'check_inactive';
-                    }
-                @endphp
+
+                    @php
+                        if( $h_user->active == 1 ) {
+                            $active = 'active_check';
+                        }else{
+                            $active = 'check_inactive';
+                        }
+                    @endphp
 
                     <td data-filter="{{ $active }}"  data-order="{{ $h_user->id}}">{{ $h_user->id }}</td>
                     <td>{{ $h_user->customer }}</td>
@@ -40,8 +43,10 @@
                     <td>{{ $h_user->location}}</td>
                     <td>{{ $h_user->address }}</td>
                     <td>{{ $h_user->email }}</td>
-                    <td>mail@mail.com</td>
-                    <td>www.test.com</td>
+                    <td>{{ $h_user->domain->name}}</td>
+                    <td>{{ $h_user->domain->period }}</td>
+                    <td>{{ $h_user->hosting->packet}}</td>
+                    <td>{{ $h_user->hosting->payment }}</td>
                     <td>
                         @if( $h_user->active == 1 )
                             <i class="fas fa-check-circle" style="color:green"></i>

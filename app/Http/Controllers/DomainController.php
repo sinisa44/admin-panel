@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Domain;
 use Illuminate\Http\Request;
-use App\HostingUser;
 
-class HostingUserController extends Controller
+class DomainController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class HostingUserController extends Controller
      */
     public function index()
     {
-        $hosting_users = HostingUser::with( 'domain', 'hosting' )->get();
-                       
-        return view( 'hostinguser.index', compact( 'hosting_users') );
+        //
     }
 
     /**
@@ -26,7 +24,7 @@ class HostingUserController extends Controller
      */
     public function create()
     {
-       return view( 'hostinguser.create' );
+        //
     }
 
     /**
@@ -43,10 +41,10 @@ class HostingUserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Domain  $domain
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Domain $domain)
     {
         //
     }
@@ -54,10 +52,10 @@ class HostingUserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Domain  $domain
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Domain $domain)
     {
         //
     }
@@ -66,10 +64,10 @@ class HostingUserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Domain  $domain
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Domain $domain)
     {
         //
     }
@@ -77,10 +75,10 @@ class HostingUserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Domain  $domain
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Domain $domain)
     {
         //
     }

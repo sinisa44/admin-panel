@@ -13,7 +13,9 @@
                 <th>Location</th>
                 <th>Email</th>
                 <th>Domain</th>
+                <th>Domain Period</th>
                 <th>Hosting Packet</th>
+                <th>Hosting Payment</th>
                 <th>Active</th>
             </tr>
         </thead>
@@ -37,8 +39,10 @@
                     <td>{{ $h_user->address }}</td>
                     <td>{{ $h_user->location }}</td>
                     <td>{{ $h_user->email }}</td>
-                    <td>www.test.com</td>
-                    <td>LITE</td>
+                    <td>{{ $h_user->domain->name}}</td>
+                    <td>{{ $h_user->domain->period }}</td>
+                    <td>{{ $h_user->hosting->packet}}</td>
+                    <td>{{ $h_user->hosting->payment }}</td>
                     <td>
                         @if( $h_user->active == 1 )
                            
